@@ -1,0 +1,13 @@
+variavel,descricao,tipo,subtipo
+Surname,O sobrenome do cliente,qualitativa,nominal
+CreditScore,O score de crédito do cliente,quantitativa,discreta
+Geography,"A localização geográfica do cliente (por exemplo, país ou região)",qualitativa,nominal
+Gender,O gênero do cliente,qualitativa,nominal
+Age,A idade do cliente,quantitativa,discreta
+Tenure,O número de anos que o cliente está no banco,quantitativa,discreta
+Balance,O saldo da conta do cliente,quantitativa,continua
+NumOfProducts,O número de produtos bancários que o cliente possui,quantitativa,discreta
+HasCrCard,Indica se o cliente possui cartão de crédito (binário: sim/não),qualitativa,nominal
+IsActiveMember,Indica se o cliente é um membro ativo (binário: sim/não),qualitativa,nominal
+EstimatedSalary,O salário estimado do cliente,quantitativa,continua
+Exited,Indica se o cliente saiu do banco (binário: sim/não),qualitativa,nominal
