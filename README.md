@@ -1,6 +1,16 @@
-# `<Análise de Churn de Clientes Bancários>`
+<div align="center">
+  
+  `D20 Dragons`
+  
+  <img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/a4a86016-0f78-451a-869f-d8e267fe9e3d" width="300">
+</div>
+<hr>
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)
+# Análise de Churn de Clientes Bancários
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+![GitHub](https://img.shields.io/github/license/atlantico-academy/equipe1-2024.1.svg) [![PyPI](https://img.shields.io/pypi/v/atlantico-academy-equipe1-2024.1.svg)](http://pypi.org/project/atlantico-academy-equipe1-2024.1/) [![GitHub last commit](https://img.shields.io/github/last-commit/atlantico-academy/equipe1-2024.1.svg)](https://github.com/atlantico-academy/equipe1-2024.1/commit/developer)
 
 ## Contexto
 
@@ -16,16 +26,15 @@ A justificativa para este projeto se baseia na importância de manter uma base d
 
 ## Desenvolvedores
 
-[<img src=""  width="150" height="150">](https://github.com/claralimasilva) | [<img src=""  width="150" height="150">](https://github.com/matheusvazdata) |  [<img src=""  width="150" height="150">](https://github.com/matt-balda) | [<img src=""  width="150" height="150">](https://github.com/uSilas) 
+[<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/e1af5396-1b27-46f2-9e67-bcc13049ce73"  width="150" height="150">](https://github.com/claralimasilva) | [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/aa965a52-2d5f-4836-9ac9-ab117f913b31"  width="150" height="150">](https://github.com/matheusvazdata) |  [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/1187a373-0dba-4430-b35b-00e2901b3bf6"  width="150" height="150">](https://github.com/matt-balda) | [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/6023d7fa-71fa-4bf1-ab29-9b439d63e7e0"  width="150" height="150">](https://github.com/uSilas) 
 --- | --- | --- | --- 
 [Clara Lima Silva](https://github.com/claralimasilva) | [Francisco Matheus Vaz dos Santos](https://github.com/matheusvazdata) |  [Mateus Balda Mota](https://github.com/matt-balda) | [Silas Eufrásio da Silva](https://github.com/uSilas) 
 
-#### [Execução](./docs/code.md)
+### > [Execução](./docs/code.md)
 
 ### Organização de diretórios
 
 ```
-.
 ├── data/              # Diretório contendo todos os arquivos de dados
 │   ├── external/      # Arquivos de dados de fontes externas
 │   ├── interim/       # Arquivos de dados intermediários
@@ -45,5 +54,4 @@ A justificativa para este projeto se baseia na importância de manter uma base d
 ├── poetry.lock        # Arquivo com sub-dependências do projeto principal
 ├── README.md          # Informações gerais do projeto
 └── tasks.py           # Arquivo com funções para criação de tarefas utilizadas pelo invoke
-
 ```
