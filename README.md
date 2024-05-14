@@ -12,6 +12,8 @@
 
 ![GitHub](https://img.shields.io/github/license/atlantico-academy/equipe1-2024.1.svg) [![PyPI](https://img.shields.io/pypi/v/atlantico-academy-equipe1-2024.1.svg)](http://pypi.org/project/atlantico-academy-equipe1-2024.1/) [![GitHub last commit](https://img.shields.io/github/last-commit/atlantico-academy/equipe1-2024.1.svg)](https://github.com/atlantico-academy/equipe1-2024.1/commit/developer)
 
+**[Documentação](./docs/index.md)** | **[Dados](./docs/data.md)** | **[Execução](./docs/code.md)** | **[Insights](./docs/insight.md)**
+
 ## Contexto
 
 Este projeto foca na análise de [churn de clientes de um banco, usando um dataset disponível no Kaggle](https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dataset). O objetivo é identificar padrões e fatores que influenciam os clientes a deixar o banco, utilizando técnicas de ciência de dados para processar e analisar os dados. A análise ajudará a entender melhor as necessidades dos clientes e a melhorar as estratégias de retenção.
@@ -22,15 +24,14 @@ A justificativa para este projeto se baseia na importância de manter uma base d
 
 ## Graphical Abstract
 
-[Graphical Abstract](https://whimsical.com/fluxograma-ciclico-crisp-dm-para-previsao-de-churn-de-clientes-VEJSdhqT3cxN7DKenK6toG)
+![graphical-abstract-d20-dragons (2)](https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/91929679-5c3e-4da1-a552-15e85eedc700)
+
 
 ## Desenvolvedores
 
 [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/e1af5396-1b27-46f2-9e67-bcc13049ce73"  width="150" height="150">](https://github.com/claralimasilva) | [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/aa965a52-2d5f-4836-9ac9-ab117f913b31"  width="150" height="150">](https://github.com/matheusvazdata) |  [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/1187a373-0dba-4430-b35b-00e2901b3bf6"  width="150" height="150">](https://github.com/matt-balda) | [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/6023d7fa-71fa-4bf1-ab29-9b439d63e7e0"  width="150" height="150">](https://github.com/uSilas) 
 --- | --- | --- | --- 
 [Clara Lima Silva](https://github.com/claralimasilva) | [Francisco Matheus Vaz dos Santos](https://github.com/matheusvazdata) |  [Mateus Balda Mota](https://github.com/matt-balda) | [Silas Eufrásio da Silva](https://github.com/uSilas) 
-
-### > [Execução](./docs/code.md)
 
 ### Organização de diretórios
 
