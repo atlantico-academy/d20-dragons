@@ -1,95 +1,41 @@
-. # <Título do projeto>
+<div align="center">
+  
+  `D20 Dragons`
+  
+  <img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/a4a86016-0f78-451a-869f-d8e267fe9e3d" width="300">
+</div>
+<hr>
 
-Insira aqui um resumo do projeto que será construído. Tente apresentar uma justificativa para o projeto. É desejável que também se insira um [graphical abstract](https://www.elsevier.com/authors/tools-and-resources/visual-abstract).
+# Análise de Churn de Clientes Bancários
+
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black)![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white)![Plotly](https://img.shields.io/badge/Plotly-%233F4F75.svg?style=for-the-badge&logo=plotly&logoColor=white)![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white)![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white)
+
+![GitHub](https://img.shields.io/github/license/atlantico-academy/equipe1-2024.1.svg) [![PyPI](https://img.shields.io/pypi/v/atlantico-academy-equipe1-2024.1.svg)](http://pypi.org/project/atlantico-academy-equipe1-2024.1/) [![GitHub last commit](https://img.shields.io/github/last-commit/atlantico-academy/equipe1-2024.1.svg)](https://github.com/atlantico-academy/equipe1-2024.1/commit/developer)
+
+**[Documentação](./docs/index.md)** | **[Dados](./docs/data.md)** | **[Execução](./docs/code.md)** | **[Insights](./docs/insight.md)**
+
+## Contexto
+
+Este projeto foca na análise de [churn de clientes de um banco, usando um dataset disponível no Kaggle](https://www.kaggle.com/datasets/saurabhbadole/bank-customer-churn-prediction-dataset). O objetivo é identificar padrões e fatores que influenciam os clientes a deixar o banco, utilizando técnicas de ciência de dados para processar e analisar os dados. A análise ajudará a entender melhor as necessidades dos clientes e a melhorar as estratégias de retenção.
+
+## Justificativa
+
+A justificativa para este projeto se baseia na importância de manter uma base de clientes sólida para a sustentabilidade financeira do banco. Reduzir o churn pode significar maior lucratividade e satisfação do cliente, crucial em um mercado competitivo.
+
+## Graphical Abstract
+
+![graphical-abstract-d20-dragons (2)](https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/91929679-5c3e-4da1-a552-15e85eedc700)
+
 
 ## Desenvolvedores
- - [Nome do desenvolvedor #1](url-do-github-do-desenvolvedor-#1)
- - [Nome do desenvolvedor #2](url-do-github-do-desenvolvedor-#2)
- - [Nome do desenvolvedor #3](url-do-github-do-desenvolvedor-#3)
- - [Nome do desenvolvedor #4](url-do-github-do-desenvolvedor-#4)
- - ...
 
----
-
-> **Nota**: todo o texto abaixo é somente para entendimento do usuário do template. Por favor remova-o quando for atualizar este `README.md`.
-
-## Funcionalidades
-
-Esse template foi inicialmente baseado no [template de ciência de dados do cookiecutter](https://drivendata.github.io/cookiecutter-data-science/), mas ao longo do tempo várias modificações foram sendo realizadas. Atualmente o template tem as seguintes características:
- - Utilização do arquivo `pyproject.toml` como centralizador de dependências;
- - Configuração para criação de aplicação `streamlit`;
- - Utilização de [jupyter notebooks](https://jupyter.org/) para arquivos de análise;
- - Documentação com o [mkdocs](https://www.mkdocs.org/) ([material design](https://squidfunk.github.io/mkdocs-material/) theme)
-
-## Instruções
-
-### Requisitos
-
-Para utilizar este template, você precisará de um ambiente com os seguintes softwares:
- - git
- - Python 3.8
- - Poetry `1.1.13` ou superior
-
-É aconselhável o uso do `pyenv` para o gerenciamento de versões do Python.
-
-### Iniciando um novo projeto
-
-Para iniciar um novo projeto você precisa ter instalado na sua máquina as aplicações citadas na seção anterior, depois disso basta:
-
-1. clicar no botão **Use this template** (ou "Usar este modelo").
-2. Digitar um nome para seu repositório e uma descrição opcional.
-3. Escolher a visibilidade do projeto (Publica ou privada).
-4. Clicar em **Create repository from template** (Criar repositório a partir do modelo).
-
-Pronto, acaba de criar um repositório a partir deste modelo. Para mais informações sobre o uso de templates, acesse a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
-
-
-### Contribuindo com um repositório já criado
-
-Depois de criar o repositório, para começar a modificá-lo e/ou contribuir com repositórios já criados,  você precisa cloná-lo. Para isso, siga os seguintes passos:
-
-1. Acima da lista de arquivos, clique no botão **Code** (em verde).
-2. Copie a URL para o repositório.
-    - Tente clonar utilizando uma chave **SSH**. Para isso, clique na aba **SSH** e em seguida clique no ícone de cópia.
-3. Abra o terminal.
-4. Altere o diretório de trabalho atual para o local que deseja ter o diretório clonado.
-5. Digite `git clone` e cole a URL que você copiou anteriormente:
-
-```
-git clone git@github.com:NOME-DE-USUARIO/REPOSITORIO.git
-```
-6. Pressione **Enter** para criar seu clone local.
-
-Proto, com isso você acaba de clonar um repositório. Para mais informações sobre a clonagem de arquivos, acesse a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository).
-
-Com o repositório clonado, você precisa navegar até a pasta local, usando o comando :
-
-```
-cd REPOSITORIO
-```
-
-Estando na pasta do repositório, basta instalar as dependências do projeto utilizando o comando:
-
-```
-poetry install
-```
-
-Ele irá instalar todas as dependências contidas no arquivo `pyproject.toml`. Depois disso basta ativar o ambiente virtual criado pelo Poetry utilizando o comando:
-
-```
-poetry shell
-```
-
-Para mais informações sobre os comandos do Poetry, visite a [documentação oficial](https://python-poetry.org/docs/).
-
-Para contribuir com um projeto, tente utilizar uma metodologia adequada. Utilize [este artigo](https://omadson.github.io/site/blog/2022/software-development-workflow/) para obter mais informações.
-
+[<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/e1af5396-1b27-46f2-9e67-bcc13049ce73"  width="150" height="150">](https://github.com/claralimasilva) | [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/aa965a52-2d5f-4836-9ac9-ab117f913b31"  width="150" height="150">](https://github.com/matheusvazdata) |  [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/1187a373-0dba-4430-b35b-00e2901b3bf6"  width="150" height="150">](https://github.com/matt-balda) | [<img src="https://github.com/atlantico-academy/equipe1-2024.1/assets/94808306/6023d7fa-71fa-4bf1-ab29-9b439d63e7e0"  width="150" height="150">](https://github.com/uSilas) 
+--- | --- | --- | --- 
+[Clara Lima Silva](https://github.com/claralimasilva) | [Francisco Matheus Vaz dos Santos](https://github.com/matheusvazdata) |  [Mateus Balda Mota](https://github.com/matt-balda) | [Silas Eufrásio da Silva](https://github.com/uSilas) 
 
 ### Organização de diretórios
 
-
 ```
-.
 ├── data/              # Diretório contendo todos os arquivos de dados
 │   ├── external/      # Arquivos de dados de fontes externas
 │   ├── interim/       # Arquivos de dados intermediários
@@ -109,5 +55,4 @@ Para contribuir com um projeto, tente utilizar uma metodologia adequada. Utilize
 ├── poetry.lock        # Arquivo com sub-dependências do projeto principal
 ├── README.md          # Informações gerais do projeto
 └── tasks.py           # Arquivo com funções para criação de tarefas utilizadas pelo invoke
-
 ```

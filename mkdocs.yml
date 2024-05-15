@@ -1,6 +1,11 @@
-site_name: Nome do projeto
+site_name: Banking Customer Churn Prediction
 plugins:
   - search
+nav:
+  - Home: index.md
+  - Dados: data.md
+  - Insights: insight.md
+  - Execução: code.md
 
 theme:
   name: material
@@ -53,5 +58,5 @@ extra_css:
   - assets/css/tables.css
 
 # Repository
-repo_name: omadson/project-template
-repo_url: https://github.com/omadson/project-template
+repo_name: atlantico-academy/equipe1-2024.1
+repo_url: https://github.com/atlantico-academy/equipe1-2024.1
