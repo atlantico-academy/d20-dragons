@@ -3,14 +3,13 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 import pickle
-
+import joblib
 sclr = StandardScaler()
 
 st.sidebar.caption("**Collaborators:**\n Clara, Mateus e Silas")
 
-# loading models
-# df = pickle.load(open('df.pkl', 'rb'))
-# rfc = pickle.load(open('rfc.pkl', 'rb'))
+#   loading models
+xgb = joblib.load('.\models\pipeline_model.pkl')
 
 def prediction(credit_score, country, gender, age, tenure, balance, products_number, credit_card, active_member, estimated_salary):
     # Check for empty strings and handle accordingly
@@ -44,25 +43,40 @@ def prediction(credit_score, country, gender, age, tenure, balance, products_num
     if estimated_salary == '':
         st.error("Please provide a valid estimated salary.")
         return None
-
-    # features = np.array([[float(credit_score), country, gender, float(age), float(tenure), float(balance), float(products_number), float(credit_card), float(active_member), float(estimated_salary)]])
-    # features = sclr.fit_transform(features)  # Scale the country column
-    # prediction = rfc.predict(features).reshape(1, -1)
+    
+    features = [[float(credit_score), country, gender, float(age), float(tenure), float(balance), float(products_number), float(credit_card), float(active_member), float(estimated_salary)]]
+    colunas = ['CreditScore', 'Geography', 'Gender', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+    features = pd.DataFrame(features,columns=colunas)
+    print(features)
+    prediction = xgb.predict(features)
+    
+    
     return prediction[0]
 
 # web app
 st.title('Bank Customer Churn Prediction')
 credit_score = st.number_input('Credit Score')
-country = st.text_input('Country')
-gender = st.text_input('Gender')
-age = st.number_input('Age')
-tenure = st.number_input('Tenure')
+country = st.selectbox('Country',['Germany','Spain','France'])
+gender = st.selectbox('Gender',['Male','Female'])    
+age = st.number_input('Age',step=1)
+tenure = st.number_input('Tenure',step=1,min_value=0,max_value=10)
 balance = st.number_input('Balance')
-products_number = st.number_input('Products Number')
-credit_card = st.number_input('Credit Card')
-active_member = st.number_input('Active Member')
+products_number = st.number_input('Products Number',min_value=0,max_value=4,step=1)
+credit_card = st.selectbox('Credit Card',['Yes','No'])
+active_member = st.selectbox('Active Member',['Yes','No'])
 estimated_salary = st.number_input('Estimated Salary')
 
+credit_card = 1 if credit_card == 'Sim' else 0
+active_member = 1 if active_member == 'Sim' else 0
+
+# Mapeamento de variáveis categóricas
+#country_mapping = {'Germany': 0, 'Spain': 1, 'France': 2}
+#gender_mapping = {'Male': 0, 'Female': 1}
+
+#country = country_mapping[country]
+#gender = gender_mapping[gender]
+    
+    
 if st.button('Predict'):
     pred = prediction(credit_score, country, gender, age, tenure, balance, products_number, credit_card, active_member, estimated_salary)
 
